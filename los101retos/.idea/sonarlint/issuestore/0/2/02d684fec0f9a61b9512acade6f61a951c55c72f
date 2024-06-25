@@ -1,0 +1,9 @@
+
+W
+java:S1118
+":Add a private constructor to hide the implicit public one.(û€Ó­8²ÇÖ„2
+[
+java:S1994"9Move the update of "cont" into this loop's update clause.(ò°˜Êúÿÿÿÿ8ÒŸ Ö„2
+H
+java:S1481"&Remove this unused "i" local variable.(ò°˜Êúÿÿÿÿ8âÇ¥Ö„2
+L	java:S106"+Replace this use of System.out by a logger.(î•Åúüÿÿÿÿ8´ÇÖ„2
