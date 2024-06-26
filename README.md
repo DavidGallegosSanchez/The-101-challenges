@@ -252,41 +252,154 @@ Crea una función que calcule el valor del parámetro perdido correspondiente a 
  - Enviaremos a la función 2 de los 3 parámetros (V, R, I), y retornará el valor del tercero (redondeado a 2 decimales).
  - Si los parámetros son incorrectos o insuficientes, la función retornará la cadena de texto "Invalid values".
 
-## Challenge 43 - 
+## Challenge 43 - Conversor de temperatura
+Crea una función que transforme grados Celsius en Fahrenheit y viceversa.
+ - Para que un dato de entrada sea correcto debe poseer un símbolo "°"y su unidad ("C" o "F").
+ - En caso contrario retornará un error.
 
-## Challenge 44- 
+## Challenge 44- Truco o trato
+Este es un reto especial por Halloween.
+Deberemos crear un programa al que le indiquemos si queremos realizar "Truco o Trato" y un listado (array) de personas con las siguientes propiedades:
+- Nombre de la niña o niño
+- Edad
+-  Altura en centímetros
+Si las personas han pedido truco, el programa retornará sustos (aleatorios) siguiendo estos criterios:
+- Un susto por cada 2 letras del nombre por persona
+- Dos sustos por cada edad que sea un número par
+- Tres sustos por cada 100 cm de altura entre todas las personas
+- Sustos: 🎃 👻 💀 🕷 🕸 🦇
 
-## Challenge 45 - 
+Si las personas han pedido trato, el programa retornará dulces (aleatorios) siguiendo estos criterios:
+- Un dulce por cada letra de nombre
+- Un dulce por cada 3 años cumplidos hasta un máximo de 10 años por persona
+- Dos dulces por cada 50 cm de altura hasta un máximo de 150 cm por persona
+- Dulces: 🍰 🍬 🍡 🍭 🍪 🍫 🧁 🍩
+- En caso contrario retornará un error.
 
-## Challenge 46 - 
+## Challenge 45 - Bumeranes
+Crea una función que retorne el número total de bumeranes de un array de números enteros e imprima cada uno de ellos.
+- Un bumerán (búmeran, boomerang) es una secuencia formada por 3 números seguidos, en el que el primero y el último son iguales, y el segundo es diferente. Por ejemplo [2, 1, 2].
+- En el array [2, 1, 2, 3, 3, 4, 2, 4] hay 2 bumeranes ([2, 1, 2] y [4, 2, 4]).
 
-## Challenge 47 - 
+## Challenge 46 - Contenedor de agua
+Dado un array de números enteros positivos, donde cada uno representa unidades de bloques apilados, debemos calcular cuantas unidades de agua quedarán atrapadas entre ellos.
+- Ejemplo: Dado el array [4, 0, 3, 6, 1, 3].
 
-## Challenge 48 - 
+        ⏹
+        ⏹
+  ⏹💧💧⏹
+  ⏹💧⏹⏹💧⏹
+  ⏹💧⏹⏹💧⏹
+  ⏹💧⏹⏹⏹⏹
 
-## Challenge 49 - 
+Representando bloque con ⏹︎ y agua con 💧, quedarán atrapadas 7 unidades de agua. Suponemos que existe un suelo impermeable en la parte inferior que retiene el agua.
 
-## Challenge 50 - 
+## Challenge 47 - ¿Donde está el robot?
+Calcula dónde estará un robot (sus coordenadas finales) que se encuentra en una cuadrícula representada por los ejes "x" e "y".
+- El robot comienza en la coordenada (0, 0).
+- Para idicarle que se mueva, le enviamos un array formado por enteros (positivos o negativos) que indican la secuencia de pasos a dar.
+- Por ejemplo: [10, 5, -2] indica que primero se mueve 10 pasos, se detiene, luego 5, se detiene, y finalmente 2.
+El resultado en este caso sería (x: -5, y: 12)
+- Si el número de pasos es negativo, se desplazaría en sentido contrario al que está mirando.
+- Los primeros pasos los hace en el eje "y". Interpretamos que está mirando hacia la parte positiva del eje "y".
+- El robot tiene un fallo en su programación: cada vez que finaliza una secuencia de pasos gira 90 grados en el sentido contrario a las agujas del reloj.
 
-## Challenge 51 - 
+## Challenge 48 - Vocal más común
+Crea un función que reciba un texto y retorne la vocal que más veces se repita.
+- Ten cuidado con algunos casos especiales.
+- Si no hay vocales podrá devolver vacío.
 
-## Challenge 52 - 
+## Challenge 49 - El calendario de adviento 2022
+¿Conoces el calendario de adviento de la comunidad (https://adviento.dev)? 24 días, 24 regalos sorpresa relacionados con desarrollo de software, ciencia y tecnología desde el 1 de diciembre.
+Enunciado: Crea una función que reciba un objeto de tipo "Date" y retorne lo siguiente:
+- Si la fecha coincide con el calendario de aDEViento 2022: Retornará el regalo de ese día (a tu elección) y cuánto queda para que finalice el sorteo de ese día.
+- Si la fecha es anterior: Cuánto queda para que comience el calendario.
+- Si la fecha es posterior: Cuánto tiempo ha pasado desde que ha finalizado.
+Notas:
+- Tenemos en cuenta que cada día del calendario comienza a medianoche 00:00:00 y finaliza a las 23:59:59.
+- Debemos trabajar con fechas que tengan año, mes, día, horas, minutos y segundos.
 
-## Challenge 53 - 
+## Challenge 50 - El detector de Handles
+Crea una función que sea capaz de detectar y retornar todos los
+handles de un texto usando solamente Expresiones Regulares.
+Debes crear una expresión regular para cada caso:
+- Handle usuario: Los que comienzan por "@"
+- Handle hashtag: Los que comienzan por "#"
+- Handle web: Los que comienzan por "www.", "http://", "https://" y finalizan con un dominio (.com, .es...)
 
-## Challenge 54 - 
+## Challenge 51 - La encriptación de karaca
+Crea una función que sea capaz de encriptar y desencriptar texto utilizando el algoritmo de encriptación de Karaca (debes buscar información sobre él).
 
-## Challenge 55 - 
+## Challenge 52 - El reto random
+Crea tu propio enunciado para que forme parte de los retos de 2023.
+- Ten en cuenta que su dificultad debe ser asumible por la comunidad y seguir un estilosemejante a los que hemos realizado durante el año.
+- Si quieres también puedes proponer tu propia solución al reto (en el lenguaje que quieras).
 
-## Challenge 56 - 
+## Challenge 53 - El famoso "Fizz Buzz" (v2)
+Escribe un programa que muestre por consola (con un print) los números de 1 a 100 (ambos incluidos y con un salto de línea entre cada impresión), sustituyendo los siguientes:
+- Múltiplos de 3 por la palabra "fizz".
+- Múltiplos de 5 por la palabra "buzz".
+- Múltiplos de 3 y de 5 a la vez por la palabra "fizzbuzz".
 
-## Challenge 57 - 
+## Challenge 54 - El "lenguaje hacker"
+Escribe un programa que reciba un texto y transforme lenguaje natural a "lenguaje hacker" (conocido realmente como "leet" o "1337"). Este lenguaje se caracteriza por sustituir caracteres alfanuméricos.
+- Utiliza esta tabla (https://www.gamehouse.com/blog/leet-speak-cheat-sheet) con el alfabeto y los números en "leet". (Usa la primera opción de cada transformación. Por ejemplo "4" para la "a")
 
-## Challenge 58 - 
+## Challenge 55 - El partido de tenis
+Escribe un programa que muestre cómo transcurre un juego de tenis y quién lo ha ganado.
+El programa recibirá una secuencia formada por "P1" (Player 1) o "P2" (Player 2), según quien gane cada punto del juego.
 
-## Challenge 59 - 
+- Las puntuaciones de un juego son "Love" (cero), 15, 30, 40, "Deuce" (empate), ventaja.
+- Ante la secuencia [P1, P1, P2, P2, P1, P2, P1, P1], el programa mostraría lo siguiente:
+  15 - Love
+  30 - Love
+  30 - 15
+  30 - 30
+  40 - 30
+  Deuce
+  Ventaja P1
+  Ha ganado el P1
+- Si quieres, puedes controlar errores en la entrada de datos.
+- Consulta las reglas del juego si tienes dudas sobre el sistema de puntos.
 
-## Challenge 60 - 
+## Challenge 56 - El generador de contraseñas
+Escribe un programa que sea capaz de generar contraseñas de forma aleatoria.
+Podrás configurar generar contraseñas con los siguientes parámetros:
+- Longitud: Entre 8 y 16.
+- Con o sin letras mayúsculas.
+- Con o sin números.
+- Con o sin símbolos.
+(Pudiendo combinar todos estos parámetros entre ellos)
+
+## Challenge 57 - Primo, fibonacci y par
+Escribe un programa que, dado un número, compruebe y muestre si es primo, fibonacci y par.
+Ejemplos:
+- Con el número 2, nos dirá: "2 es primo, fibonacci y es par"
+- Con el número 7, nos dirá: "7 es primo, no es fibonacci y es impar"
+
+## Challenge 58 - ¡Hola mundo!
+Escribe un !Hola Mundo! en todos los lenguajes de programación que puedas.
+Seguro que hay algún lenguaje que te llama la atención y nunca has utilizado, o quizás quieres dar tus primeros pasos... ¡Pues este es el momento!
+
+A ver quién se atreve con uno de esos lenguajes que no solemos ver por ahí...
+
+## Challenge 59 - Piedra, papel, tijera, lagarto, spock
+Crea un programa que calcule quien gana más partidas al piedra, papel, tijera, lagarto, spock.
+- El resultado puede ser: "Player 1", "Player 2", "Tie" (empate)
+- La función recibe un listado que contiene pares, representando cada jugada.
+- El par puede contener combinaciones de "🗿" (piedra), "📄" (papel),
+  "✂️" (tijera), "🦎" (lagarto) o "🖖" (spock).
+- Ejemplo. Entrada: [("🗿","✂️"), ("✂️","🗿"), ("📄","✂️")]. Resultado: "Player 2".
+- Debes buscar información sobre cómo se juega con estas 5 posibilidades.
+
+## Challenge 60 - El sombrero seleccionador
+Crea un programa que simule el comportamiento del sombrero seleccionador del universo mágico de Harry Potter.
+- De ser posible realizará 5 preguntas (como mínimo) a través de la terminal.
+- Cada pregunta tendrá 4 respuestas posibles (también a seleccionar a través de terminal).
+- En función de las respuestas a las 5 preguntas deberás diseñar un algoritmo que coloque al alumno en una de las 4 casas de Hogwarts:
+  (Gryffindor, Slytherin, Hufflepuff y Ravenclaw)
+- Ten en cuenta los rasgos de cada casa para hacer las preguntas y crear el algoritmo seleccionador:
+Por ejemplo, en Slytherin se premia la ambición y la astucia.
 
 ## Challenge 61 - 
 
