@@ -113,3 +113,259 @@ Se podría representar con un vacío "", por ejemplo.
 ## Challenge 20 - Conversor tiempo
 Crea una función que reciba días, horas, minutos y segundos (como enteros) y retorne su resultado en milisegundos.
 
+## Challenge 21 - Parando el tiempo
+Crea una función que sume 2 números y retorne su resultado pasados unos segundos.
+ - Recibirá por parámetros los 2 números a sumar y los segundos que debe tardar en finalizar su ejecución.
+ - Si el lenguaje lo soporta, deberá retornar el resultado de forma asíncrona, es decir, sin detener la ejecución del programa principal.
+Se podría ejecutar varias veces al mismo tiempo.
+ 
+## Challenge 22 - Calculadora .txt
+Lee el fichero "Challenge21.txt" incluido en el proyecto, calcula su resultado e imprímelo.
+ - El .txt se corresponde con las entradas de una calculadora.
+ - Cada línea tendrá un número o una operación representada por un símbolo (alternando ambos).
+ - Soporta números enteros y decimales.
+ - Soporta las operaciones suma "+", resta "-", multiplicación "*" y división "/".
+ - El resultado se muestra al finalizar la lectura de la última línea (si el .txt es correcto).
+ - Si el formato del .txt no es correcto, se indicará que no se han podido resolver las operaciones.
+
+## Challenge 23 - Conjuntos
+Crea una función que reciba dos array, un booleano y retorne un array.
+ - Si el booleano es verdadero buscará y retornará los elementos comunes de los dos array.
+ - Si el booleano es falso buscará y retornará los elementos no comunes de los dos array.
+ - No se pueden utilizar operaciones del lenguaje que lo resuelvan directamente.
+
+## Challenge 24 - Máximo común divisor y mínimo común múltiplo
+Crea dos funciones, una que calcule el máximo común divisor (MCD) y otra que calcule el mínimo común múltiplo (mcm) de dos números enteros.
+ - No se pueden utilizar operaciones del lenguaje que lo resuelvan directamente.
+
+## Challenge 25 - Iteration master
+Quiero contar del 1 al 100 de uno en uno (imprimiendo cada uno).
+¿De cuántas maneras eres capaz de hacerlo? Crea el código para cada una de ellas.
+
+## Challenge 26 - Piedra, papel, tijera
+Crea un programa que calcule quien gana más partidas al piedra, papel, tijera.
+ - El resultado puede ser: "Player 1", "Player 2", "Tie" (empate)
+ - La función recibe un listado que contiene pares, representando cada jugada.
+ - El par puede contener combinaciones de "R" (piedra), "P" (papel) o "S" (tijera).
+ - Ejemplo. Entrada: [("R","S"), ("S","R"), ("P","S")]. Resultado: "Player 2".
+ 
+## Challenge 27 - Cuadrado y triángulo 2D
+Crea un programa que dibuje un cuadrado o un triángulo con asteriscos "*".
+ - Indicaremos el tamaño del lado y si la figura a dibujar es una u otra.
+ - EXTRA: ¿Eres capaz de dibujar más figuras?
+
+## Challenge 28 - Vectores ortogonales
+Crea un programa que determine si dos vectores son ortogonales.
+ - Los dos array deben tener la misma longitud.
+ - Cada vector se podría representar como un array. Ejemplo: [1, -2]
+
+## Challenge 29 - Máquina expendedora
+Simula el funcionamiento de una máquina expendedora creando una operación que reciba dinero (array de monedas) y un número que indique la selección del producto.
+ - El programa retornará el nombre del producto y un array con el dinero de vuelta (con el menor número de monedas).
+ - Si el dinero es insuficiente o el número de producto no existe, deberá indicarse con un mensaje y retornar todas las monedas.
+ - Si no hay dinero de vuelta, el array se retornará vacío.
+ - Para que resulte más simple, trabajaremos en céntimos con monedas de 5, 10, 50, 100 y 200.
+ - Debemos controlar que las monedas enviadas estén dentro de las soportadas.
+ 
+## Challenge 30 - Ordena la lista
+Crea una función que ordene y retorne una matriz de números.
+ - La función recibirá un listado (por ejemplo [2, 4, 6, 8, 9]) y un parámetro adicional "Asc" o "Desc" para indicar si debe ordenarse de menor a mayor o de mayor a menor.
+ - No se pueden utilizar funciones propias del lenguaje que lo resuelvan automáticamente.
+
+## Challenge 31 - Marco de palabras
+Crea una función que reciba un texto y muestre cada palabra en una línea, formando un marco rectangular de asteriscos.
+ - ¿Qué te parece el reto? Se vería así:
+ **********
+ * ¿Qué   *
+ * te     *
+ * parece *
+ * el     *
+ * reto?  *
+ **********
+ 
+## Challenge 32 - Años bisiestos
+Crea una función que imprima los 30 próximos años bisiestos siguientes a uno dado.
+ - Utiliza el menor número de líneas para resolver el ejercicio.
+
+## Challenge 33 - El segundo
+Dado un listado de números, encuentra el SEGUNDO más grande
+
+## Challenge 34 - Ciclo sexagenario chino
+Crea un función, que dado un año, indique el elemento  y animal correspondiente en el ciclo sexagenario del zodíaco chino.
+ - Info: https://www.travelchinaguide.com/intro/astrology/60year-cycle.htm
+ - El ciclo sexagenario se corresponde con la combinación de los elementos madera, fuego, tierra, metal, agua y los animales rata, buey, tigre, conejo, dragón, serpiente, caballo, oveja, mono, gallo, perro, cerdo (en este orden).
+ - Cada elemento se repite dos años seguidos.
+ - El último ciclo sexagenario comenzó en 1984 (Madera Rata).
+ 
+## Challenge 35 - Los números perdidos
+Dado un array de enteros ordenado y sin repetidos, crea una función que calcule y retorne todos los que faltan entre el mayor y el menor.
+ - Lanza un error si el array de entrada no es correcto.
+ 
+## Challenge 36 - Batalla Pokemon
+Crea un programa que calcule el daño de un ataque durante una batalla Pokémon.
+ - La fórmula será la siguiente: daño = 50 * (ataque / defensa) * efectividad
+ - Efectividad: x2 (súper efectivo), x1 (neutral), x0.5 (no es muy efectivo)
+ - Sólo hay 4 tipos de Pokémon: Agua, Fuego, Planta y Eléctrico (buscar su efectividad)
+ - El programa recibe los siguientes parámetros:
+ - Tipo del Pokémon atacante.
+ - Tipo del Pokémon defensor.
+ - Ataque: Entre 1 y 100.
+ - Defensa: Entre 1 y 100.
+
+## Challenge 37 - Los anillos de poder
+¡La Tierra Media está en guerra! En ella lucharán razas leales a Sauron contra otras bondadosas que no quieren que el mal reine sobre sus tierras.
+Cada raza tiene asociado un "valor" entre 1 y 5:
+ - Razas bondadosas: Pelosos (1), Sureños buenos (2), Enanos (3), Númenóreanos (4), Elfos (5)
+ - Razas malvadas: Sureños malos (2), Orcos (2), Goblins (2),  Huargos (3), Trolls (5)
+ Crea un programa que calcule el resultado de la batalla entre los 2 tipos de ejércitos:
+ - El resultado puede ser que gane el bien, el mal, o exista un empate.
+   Dependiendo de la suma del valor del ejército y el número de integrantes.
+ - Cada ejército puede estar compuesto por un número de integrantes variable de cada raza.
+ - Tienes total libertad para modelar los datos del ejercicio.
+ Ej: 1 Peloso pierde contra 1 Orco
+     2 Pelosos empatan contra 1 Orco
+     3 Pelosos ganan a 1 Orco
+
+## Challenge 38 - Los labzamientos de "The Legen of Zelda"
+¡Han anunciado un nuevo "The Legend of Zelda"!
+Se llamará "Tears of the Kingdom" y se lanzará el 12 de mayo de 2023.
+Pero, ¿recuerdas cuánto tiempo ha pasado entre los distintos "The Legend of Zelda" de la historia?
+Crea un programa que calcule cuántos años y días hay entre 2 juegos de Zelda que tú selecciones.
+- Debes buscar cada uno de los títulos y su día de lanzamiento
+- (si no encuentras el día exacto puedes usar el mes, o incluso inventártelo)
+
+## Challenge 39 - Binario a Decimal
+Crea un programa se encargue de transformar un número binario a decimal sin utilizar funciones propias del lenguaje que lo hagan directamente.
+
+## Challenge 40 - Top Algoritmos | Quick sort
+Implementa uno de los algoritmos de ordenación más famosos: el "Quick Sort", creado por C.A.R. Hoare.
+- Entender el funcionamiento de los algoritmos más utilizados de la historia Nos ayuda a mejorar nuestro conocimiento sobre ingeniería de software.
+  Dedícale tiempo a entenderlo, no únicamente a copiar su implementación.
+- Esta es una nueva serie de retos llamada "TOP ALGORITMOS", donde trabajaremos y entenderemos los más famosos de la historia.
+
+## Challenge 41 - Triangulo de Pascal
+Crea una función que sea capaz de dibujar el "Triángulo de Pascal" indicándole únicamente el tamaño del lado.
+ - Aquí puedes ver rápidamente cómo se calcula el triángulo: https://commons.wikimedia.org/wiki/File:PascalTriangleAnimated2.gif
+
+## Challenge 42 - Ley de Ohm
+Crea una función que calcule el valor del parámetro perdido correspondiente a la ley de Ohm.
+ - Enviaremos a la función 2 de los 3 parámetros (V, R, I), y retornará el valor del tercero (redondeado a 2 decimales).
+ - Si los parámetros son incorrectos o insuficientes, la función retornará la cadena de texto "Invalid values".
+
+## Challenge 43 - 
+
+## Challenge 44- 
+
+## Challenge 45 - 
+
+## Challenge 46 - 
+
+## Challenge 47 - 
+
+## Challenge 48 - 
+
+## Challenge 49 - 
+
+## Challenge 50 - 
+
+## Challenge 51 - 
+
+## Challenge 52 - 
+
+## Challenge 53 - 
+
+## Challenge 54 - 
+
+## Challenge 55 - 
+
+## Challenge 56 - 
+
+## Challenge 57 - 
+
+## Challenge 58 - 
+
+## Challenge 59 - 
+
+## Challenge 60 - 
+
+## Challenge 61 - 
+
+## Challenge 62 - 
+
+## Challenge 63 - 
+
+## Challenge 64 -
+
+## Challenge 65 -
+
+## Challenge 66 -
+
+## Challenge 67 -
+
+## Challenge 68 -
+
+## Challenge 69 -
+
+## Challenge 70 -
+
+## Challenge 71 -
+
+## Challenge 72 -
+
+## Challenge 73 -
+
+## Challenge 74 -
+
+## Challenge 75 -
+
+## Challenge 76 -
+
+## Challenge 77 -
+
+## Challenge 78 -
+
+## Challenge 79 -
+
+## Challenge 80 -
+
+## Challenge 81 -
+
+## Challenge 82 -
+
+## Challenge 83 -
+
+## Challenge 84 -
+
+## Challenge 85 -
+
+## Challenge 86 -
+
+## Challenge 87 -
+
+## Challenge 88 -
+
+## Challenge 89 -
+
+## Challenge 90 -
+
+## Challenge 91 -
+
+## Challenge 92 -
+
+## Challenge 93 -
+
+## Challenge 94 -
+
+## Challenge 95 -
+
+## Challenge 96 -
+
+## Challenge 97 -
+
+## Challenge 98 -
+
+## Challenge 99 -
+
+## Challenge 100 -
+
+## Challenge 101 -
