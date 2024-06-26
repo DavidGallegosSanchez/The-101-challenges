@@ -401,25 +401,86 @@ Crea un programa que simule el comportamiento del sombrero seleccionador del uni
 - Ten en cuenta los rasgos de cada casa para hacer las preguntas y crear el algoritmo seleccionador:
 Por ejemplo, en Slytherin se premia la ambición y la astucia.
 
-## Challenge 61 - 
+## Challenge 61 - El generador pseudoaleatorio
+Crea un generador de números pseudoaleatorios entre 0 y 100.
+- No puedes usar ninguna función "random" (o semejante) del lenguaje de programación seleccionado.
+Es más complicado de lo que parece...
 
-## Challenge 62 - 
+## Challenge 62 - Heterogrma, Isograma y pangrama
+Crea 3 funciones, cada una encargada de detectar si una cadena de texto es un heterograma, un isograma o un pangrama.
+- Debes buscar la definición de cada uno de estos términos.
 
-## Challenge 63 - 
+## Challenge 63 - La API (Appication Programming Interface)
+Llamar a una API es una de las tareas más comunes en programación.
+Implementa una llamada HTTP a una API (la que tú quieras) y muestra su resultado a través de la terminal. Por ejemplo: Pokémon, Marvel...
+Aquí tienes un listado de posibles APIs:
+https://github.com/public-apis/public-apis
 
-## Challenge 64 -
+## Challenge 64 - Parámetros URL
+Dada una URL con parámetros, crea una función que obtenga sus valores.
+No se pueden usar operaciones del lenguaje que realicen esta tarea directamente.
 
-## Challenge 65 -
+Ejemplo: En la url https://retosdeprogramacion.com?year=2023&challenge=0 los parámetros serían ["2023", "0"]
 
-## Challenge 66 -
+## Challenge 65 - Viernes 13
+Crea una función que sea capaz de detectar si existe un viernes 13 en el mes y el año indicados.
+- La función recibirá el mes y el año y retornará verdadero o falso.
 
-## Challenge 67 -
+## Challenge 66 - Adivina la palabra
+Crea un pequeño juego que consista en adivinar palabras en un número máximo de intentos:
+- El juego comienza proponiendo una palabra aleatoria incompleta
+  - Por ejemplo "m_ur_d_v", y el número de intentos que le quedan
+- El usuario puede introducir únicamente una letra o una palabra (de la misma longitud que la palabra a adivinar)
+  - Si escribe una letra y acierta, se muestra esa letra en la palabra. Si falla, se resta uno al número de intentos
+  - Si escribe una resolución y acierta, finaliza el juego, en caso contrario, se resta uno al número de intentos
+  - Si el contador de intentos llega a 0, el jugador pierde
+- La palabra debe ocultar de forma aleatoria letras, y nunca puede comenzar ocultando más del 60%
+- Puedes utilizar las palabras que quieras y el número de intentos que consideres
 
-## Challenge 68 -
+## Challenge 67 - Octal y hexadecimal
+Crea una función que reciba un número decimal y lo trasforme a Octal y Hexadecimal.
+- No está permitido usar funciones propias del lenguaje de programación que realicen esas operaciones directamente.
 
-## Challenge 69 -
+## Challenge 68 - Aurebesh
+Crea una función que sea capaz de transformar Español al lenguaje básico del universo Star Wars: el "Aurebesh".
+- Puedes dejar sin transformar los caracteres que no existan en "Aurebesh".
+- También tiene que ser capaz de traducir en sentido contrario.
 
-## Challenge 70 -
+¿Lo has conseguido? Nómbrame en twitter.com/mouredev y escríbeme algo en Aurebesh.
+
+¡Que la fuerza os acompañe!
+
+## Challenge 69 - La escalera
+Crea una función que dibuje una escalera según su número de escalones.
+- Si el número es positivo, será ascendente de izquierda a derecha.
+- Si el número es negativo, será descendente de izquierda a derecha.
+- Si el número es cero, se dibujarán dos guiones bajos (__).
+
+Ejemplo: 4
+       _
+     _|
+   _|
+ _|
+|
+
+## Challenge 70 - Git y Github
+¡Estoy de celebración! He publicado mi primer libro:
+"Git y GitHub desde cero"
+- Papel: mouredev.com/libro-git
+- eBook: mouredev.com/ebook-git
+
+¿Sabías que puedes leer información de Git y GitHub desde la gran mayoría de lenguajes de programación?
+
+Crea un programa que lea los últimos 10 commits de este repositorio y muestre:
+- Hash
+- Autor
+- Mensaje
+- Fecha y hora
+
+Ejemplo de salida:
+Commit 1 (el más reciente) | 12345A | MoureDev | Este es un commit | 24/04/2023 21:00
+
+Se permite utilizar librerías que nos faciliten esta tarea.
 
 ## Challenge 71 -
 
