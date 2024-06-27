@@ -482,64 +482,325 @@ Commit 1 (el más reciente) | 12345A | MoureDev | Este es un commit | 24/04/2023
 
 Se permite utilizar librerías que nos faciliten esta tarea.
 
-## Challenge 71 -
+## Challenge 71 - Web scraping
+El día 128 del año celebramos en la comunidad el "Hola Mundo day" 
+Vamos a hacer "web scraping" sobre su sitio web: https://holamundo.day
 
-## Challenge 72 -
+Crea un programa que se conecte a la web del evento e imprima únicamente la agenda de eventos
+del día 8. Mostrando hora e información de cada uno.
+Ejemplo: "16:00 | Bienvenida"
 
-## Challenge 73 -
+Se permite utilizar librerías que nos faciliten esta tarea.
 
-## Challenge 74 -
+## Challenge 72 - Análisis de texto
+Crea un programa que analice texto y obtenga:
 
-## Challenge 75 -
+Número total de palabras.
+- Longitud media de las palabras.
+- Número de oraciones del texto (cada vez que aparecen un punto).
+- Encuentre la palabra más larga.
+Todo esto utilizando un único bucle.
 
-## Challenge 76 -
+## Challenge 73 - La trifuerza
+El nuevo "The Legend of Zelda: Tears of the Kingdom" ya está disponible! 
+Crea un programa que dibuje una Trifuerza de "Zelda" formada por asteriscos.
+- Debes indicarle el número de filas de los triángulos con un entero positivo (n).
+- Cada triángulo calculará su fila mayor utilizando la fórmula 2n-1.
+Ejemplo: Trifuerza 2
 
-## Challenge 77 -
+   *
+  ***
+ *   *
+*** ***
 
-## Challenge 78 -
+## Challenge 74 - Números primos gemelos
+Crea un programa que encuentre y muestre todos los pares de números primos gemelos en un rango concreto.
+El programa recibirá el rango máximo como número entero positivo.
+- Un par de números primos se considera gemelo si la diferencia entre ellos es exactamente 2. Por ejemplo (3, 5), (11, 13)
+- Ejemplo: Rango 14
+(3, 5), (5, 7), (11, 13)
 
-## Challenge 79 -
+## Challenge 75 - La espiral
+Crea una función que dibuje una espiral como la del ejemplo.
+ - Únicamente se indica de forma dinámica el tamaño del lado.
+ - Símbolos permitidos: ═ ║ ╗ ╔ ╝ ╚
+Ejemplo espiral de lado 5 (5 filas y 5 columnas):
+════╗
+╔══╗║
+║╔╗║║
+║╚═╝║
+╚═══╝
 
-## Challenge 80 -
+## Challenge 76 - La base de datos
+Realiza una conexión desde el lenguaje que hayas seleccionado a la siguiente base de datos MySQL:
+- Host: mysql-5707.dinaserver.com
+- Port: 3306
+- User: mouredev_read
+- Password: mouredev_pass
+- Database: moure_test
+Una vez realices la conexión, lanza la siguiente consulta e imprime el resultado:
+- SELECT * FROM `challenges`
+Se pueden usar librerías para realizar la lógica de conexión a la base de datos.
 
-## Challenge 81 -
+## Challenge 77 - Cifrado César
+Crea un programa que realize el cifrado César de un texto y lo imprima.
+También debe ser capaz de descifrarlo cuando así se lo indiquemos.
 
-## Challenge 82 -
+Te recomiendo que busques información para conocer en profundidad cómo realizar el cifrado. Esto también forma parte del reto.
 
-## Challenge 83 -
+## Challenge 78 - El código konami
+Crea un programa que detecte cuando el famoso "Código Konami" se ha introducido correctamente desde el teclado.
+Si sucede esto, debe notificarse mostrando un mensaje en la terminal.
 
-## Challenge 84 -
+## Challenge 79 - Testing
+Crea tres test sobre el reto 12: "Viernes 13".
+- Puedes copiar una solución ya creada por otro usuario en el lenguaje que estés utilizando.
+- Debes emplear un mecanismo de ejecución de test que posea el lenguaje de programación que hayas seleccionado.
+- Los tres test deben de funcionar y comprobar diferentes situaciones (a tu elección).
 
-## Challenge 85 -
+## Challenge 80 - Cuenta atrás
+Crea una función que reciba dos parámetros para crear una cuenta atrás.
+- El primero, representa el número en el que comienza la cuenta.
+- El segundo, los segundos que tienen que transcurrir entre cada cuenta.
+- Sólo se aceptan números enteros positivos.
+- El programa finaliza al llegar a cero.
+- Debes imprimir cada número de la cuenta atrás.
 
-## Challenge 86 -
+## Challenge 81 - Expresión matemática
+Crea una función que reciba una expresión matemática (String) y compruebe si es correcta. Retornará true o false.
+- Para que una expresión matemática sea correcta debe poseer un número, una operación y otro número separados por espacios.
+Tantos números y operaciones como queramos.
+- Números positivos, negativos, enteros o decimales.
+- Operaciones soportadas: + - * / %
+Ejemplos:
+"5 + 6 / 7 - 4" -> true
+"5 a 6" -> false
 
-## Challenge 87 -
+## Challenge 82 - El carácter infiltrado
+Crea una función que reciba dos cadenas de texto casi iguales, a excepción de uno o varios caracteres.
+La función debe encontrarlos y retornarlos en formato lista/array.
+- Ambas cadenas de texto deben ser iguales en longitud.
+- Las cadenas de texto son iguales elemento a elemento.
+- No se pueden utilizar operaciones propias del lenguaje que lo resuelvan directamente.
+Ejemplos:
+- Me llamo mouredev / Me llemo mouredov -> ["e", "o"]
+- Me llamo.Brais Moure / Me llamo brais moure -> [" ", "b", "m"]
 
-## Challenge 88 -
+## Challenge 83 - El teclado T9
+Los primeros dispositivos móviles tenían un teclado llamado T9 con el que se podía escribir texto utilizando únicamente su teclado numérico (del 0 al 9).
 
-## Challenge 89 -
+Crea una función que transforme las pulsaciones del T9 a su representación con letras.
+- Debes buscar cuál era su correspondencia original
+- Cada bloque de pulsaciones va separado por un guión.
+- Si un bloque tiene más de un número, debe ser siempre el mismo.
+- Ejemplo:
+Entrada: 6-666-88-777-33-3-33-888
+Salida: MOUREDEV
 
-## Challenge 90 -
+## Challenge 84 - El ábaco
+Crea una función que sea capaz de leer el número representado por el ábaco.
+- El ábaco se representa por un array con 7 elementos.
+- Cada elemento tendrá 9 "O" (aunque habitualmente tiene 10 para realizar operaciones) para las cuentas y una secuencia de "---" para el alambre.
+- El primer elemento del array representa los millones, y el último las unidades.
+- El número en cada elemento se representa por las cuentas que están a la izquierda del alambre.
 
-## Challenge 91 -
+Ejemplo de array y resultado:
+["O---OOOOOOOO",
+"OOO---OOOOOO",
+"---OOOOOOOOO",
+"OO---OOOOOOO",
+"OOOOOOO---OO",
+"OOOOOOOOO---",
+"---OOOOOOOOO"]
+Resultado: 1.302.790
 
-## Challenge 92 -
+## Challenge 85 - La columna de excel
+Crea una función que calcule el número de la columna de una hoja de Excel teniendo en cuenta su nombre.
+- Las columnas se designan por letras de la "A" a la "Z" de forma infinita.
+- Ejemplos: A = 1, Z = 26, AA = 27, CA = 79.
 
-## Challenge 93 -
+## Challenge 86 - Tetris
+Crea un programa capaz de gestionar una pieza de Tetris.
+- La pantalla de juego tiene 10 filas y 10 columnas representadas por símbolos 🔲
+- La pieza de tetris a manejar será la siguiente (si quieres, puedes elegir otra):
+    🔳
+    🔳🔳🔳
+- La pieza aparecerá por primera vez en la parte superior izquierda de la pantalla de juego.
+    🔳🔲🔲🔲🔲🔲🔲🔲🔲🔲
+    🔳🔳🔳🔲🔲🔲🔲🔲🔲🔲
+    🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲
+    🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲
+    🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲
+    🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲
+    🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲
+    🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲
+    🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲
+    🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲
+- Debes desarrollar una función capaz de desplazar y rotar la pieza en el tablero, recibiendo una acción cada vez que se llame, mostrando cómo se visualiza en la pantalla de juego.
+- Las acciones que se pueden aplicar a la pieza son: derecha, izquierda, abajo, rotar.
+- Debes tener en cuenta los límites de la pantalla de juego.
 
-## Challenge 94 -
+## Challenge 87 - Txt
+Crea un programa capaz de interactuar con un fichero TXT.
+IMPORTANTE: El fichero TXT NO debe subirse como parte de la corrección.
+Únicamente el código.
+- Si no existe, debe crear un fichero llamado "text.txt".
+- Desde el programa debes ser capaz de introducir texto por consola y guardarlo en una nueva línea cada vez que se pulse el botón "Enter".
+- Si el fichero existe, el programa tiene que dar la opción de seguir escribiendo a continuación o borrar su contenido y comenzar desde el principio.
+- Si se selecciona continuar escribiendo, se tiene que mostrar por consola el texto que ya posee el fichero.
 
-## Challenge 95 -
+## Challenge 88 - Primerso pasos
+Como cada año, el día 256 se celebra el "Día de la Programación".
+En nuestra comunidad siempre hacemos una gran fiesta donde repartirmos 256 regalos para seguir aprendiendo programación:
+https://diadelaprogramacion.com
 
-## Challenge 96 -
+Para seguir ayudando, te propongo este reto:
+Mostrar la sintaxis de los principales elementos de un lenguaje en TODOS los lenguajes de programación que podamos. ¿Llegaremos a 50?
 
-## Challenge 97 -
+En un fichero, haz lo siguiente (si el lenguaje lo soporta), y comenta cada bloque para identificar con qué se corresponde:
+- Haz un "Hola, mundo!"
+- Crea variables de tipo String, numéricas (enteras y decimales) y Booleanas (o cualquier tipo de dato primitivo).
+- Crea una constante.
+- Usa un if, else if y else.
+- Crea estructuras como un array, lista, tupla, set y diccionario.
+- Usa un for, foreach y un while.
+- Crea diferentes funciones (con/sin parámetros y con/sin retorno).
+- Crea una clase.
+- Muestra el control de excepciones.
 
-## Challenge 98 -
+Así, cualquier persona podrá consultar rápidamente diferentes ejemplos de sintaxis básica de muchos lenguajes.
+¡Muchas gracias!
 
-## Challenge 99 -
+## Challenge 89 - Permutaciones
+Crea un programa que sea capaz de generar e imprimir todas las permutaciones disponibles formadas por las letras de una palabra.
+- Las palabras generadas no tienen por qué existir.
+- Deben usarse todas las letras en cada permutación.
+- Ejemplo: sol, slo, ols, osl, los, lso
 
-## Challenge 100 -
+## Challenge 90 - Colores HEX y RGB
+Crea las funciones capaces de transformar colores HEX a RGB y viceversa.
+Ejemplos:
+RGB a HEX: r: 0, g: 0, b: 0 -> #000000
+HEX a RGB: hex: #000000 -> (r: 0, g: 0, b: 0)
 
-## Challenge 101 -
+## Challenge 91 - Las sumas
+Crea una función que encuentre todas las combinaciones de los números de una lista que suman el valor objetivo.
+- La función recibirá una lista de números enteros positivos y un valor objetivo.
+- Para obtener las combinaciones sólo se puede usar una vez cada elemento de la lista (pero pueden existir elementos repetidos en ella).
+- Ejemplo: Lista = [1, 5, 3, 2],  Objetivo = 6
+Soluciones: [1, 5] y [1, 3, 2] (ambas combinaciones suman 6)
+(Si no existen combinaciones, retornar una lista vacía)
+
+## Challenge 92 - Triples pitagóricos
+Crea una función que encuentre todos los triples pitagóricos (ternas) menores o iguales a un número dado.
+- Debes buscar información sobre qué es un triple pitagórico.
+- La función únicamente recibe el número máximo que puede aparecer en el triple.
+- Ejemplo: Los triples menores o iguales a 10 están formados por (3, 4, 5) y (6, 8, 10).
+
+## Challenge 93 - Tabla de multiplicar
+Crea un programa que sea capaz de solicitarte un número y se encargue de imprimir su tabla de multiplicar entre el 1 y el 10.
+- Debe visualizarse qué operación se realiza y su resultado.
+Ej: 1 x 1 = 1
+    1 x 2 = 2
+    1 x 3 = 3
+
+## Challenge 94 - La casa encantada
+Este es un reto especial por Halloween.
+Te encuentras explorando una mansión abandonada llena de habitaciones.
+En cada habitación tendrás que resolver un acertijo para poder avanzar a la siguiente.
+Tu misión es encontrar la habitación de los dulces.
+
+Se trata de implementar un juego interactivo de preguntas y respuestas por terminal.
+(Tienes total libertad para ser creativo con los textos)
+- 🏰 Casa: La mansión se corresponde con una estructura cuadrada 4 x 4 que deberás modelar. Las habitaciones de puerta y dulces no tienen enigma.
+(16 habitaciones, siendo una de entrada y otra donde están los dulces)
+Esta podría ser una representación:
+  🚪⬜️⬜️⬜️
+  ⬜️👻⬜️⬜️
+  ⬜️⬜️⬜️👻
+  ⬜️⬜️🍭⬜️
+ - ❓ Enigmas: Cada habitación propone un enigma aleatorio que deberás responder con texto.
+Si no lo aciertas no podrás desplazarte.
+- 🧭 Movimiento: Si resuelves el enigma se te preguntará a donde quieres desplazarte.
+(Ejemplo: norte/sur/este/oeste. Sólo deben proporcionarse las opciones posibles)
+- 🍭 Salida: Sales de la casa si encuentras la habitación de los dulces.
+- 👻 (Bonus) Fantasmas: Existe un 10% de que en una habitación aparezca un fantasma y tengas que responder dos preguntas para salir de ella.
+
+## Challenge 95 - Punto de encuentro
+Crea una función que calcule el punto de encuentro de dos objetos en movimiento en dos dimensiones.
+- Cada objeto está compuesto por una coordenada xy y una velocidad de desplazamiento (vector de desplazamiento) por unidad de tiempo (también en formato xy).
+- La función recibirá las coordenadas de inicio de ambos objetos y sus velocidades.
+- La función calculará y mostrará el punto en el que se encuentran y el tiempo que tardarn en lograrlo.
+- La función debe tener en cuenta que los objetos pueden no llegar a encontrarse.
+
+## Challenge 96 - Simulador de clima
+Crea una función que simule las condiciones climáticas (temperatura y probabilidad de lluvia) de un lugar ficticio al pasar un número concreto de días según estas reglas:
+- La temperatura inicial y el % de probabilidad de lluvia lo define el usuario.
+- Cada día que pasa:
+  - - 10% de posibilidades de que la temperatura aumente o disminuya 2 grados.
+  - - Si la temperatura supera los 25 grados, la probabilidad de lluvia al día siguiente aumenta en un 20%.
+  - - Si la temperatura baja de 5 grados, la probabilidad de lluvia al día siguiente disminuya en un 20%.
+  - - Si llueve (100%), la temperatura del día siguiente disminuye en 1 grado.
+- La función recibe el número de días de la predicción y muestra la temperatura y si llueve durante todos esos días.
+- También mostrará la temperatura máxima y mínima de ese periodo y cuántos días va a llover.
+
+## Challenge 97 - Adivinanzas matemáticas
+Crea un juego interactivo por terminal en el que tendrás que adivinar el resultado de diferentes operaciones matemáticas aleatorias (suma, resta, multiplicación o división de dos números enteros).
+- Tendrás 3 segundos para responder correctamente.
+- El juego finaliza si no se logra responder en ese tiempo.
+- Al finalizar el juego debes mostrar cuántos cálculos has acertado.
+- Cada 5 aciertos debes aumentar en uno el posible número de cifras de la operación (cada vez en un operando):
+ - - Preguntas 1 a 5: X (entre 0 y 9) operación Y (entre 0 y 9)
+ - - Preguntas 6 a 10: XX (entre 0 y 99) operación Y (entre 0 y 9)
+ - - Preguntas 11 a 15: XX operación YY
+ - - Preguntas 16 a 20: XXX (entre 0 y 999) operación YY
+
+## Challenge 98 - El calendario de adeviento 2023
+¿Conoces el calendario de aDEViento de la comunidad (https://adviento.dev)?
+24 días, 24 regalos sorpresa relacionados con desarrollo de software.
+Desde el 1 al 24 de diciembre.
+ 
+Crea un programa que simule el mecanismo de participación:
+- Mediante la terminal, el programa te preguntará si quieres añadir y borrar participantes, mostrarlos, lanzar el sorteo o salir.
+- Si seleccionas añadir un participante, podrás escribir su nombre y pulsar enter.
+- Si seleccionas añadir un participante, y este ya existe, avisarás de ello.
+  (Y no lo duplicarás)
+- Si seleccionas mostrar los participantes, se listarán todos.
+- Si seleccionas eliminar un participante, podrás escribir su nombre y pulsar enter.
+  (Avisando de si lo has eliminado o el nombre no existe)
+- Si seleccionas realizar el sorteo, elegirás una persona al azar y se eliminará del listado.
+- Si seleccionas salir, el programa finalizará.
+
+## Challenge 99 - La carrera de coches
+Crea un programa que simule la competición de dos coches en una pista.
+- Los dos coches estarán representados por 🚙 y 🚗. Y la meta por 🏁.
+- Cada pista tendrá entre 1 y 3 árboles 🌲 colocados de forma aleatoria.
+- Las dos pistas tendrán una longitud configurable de guiones bajos "_".
+- Los coches comenzarán en la parte derecha de las pistas. Ejemplo:
+🏁____🌲_____🚙
+🏁_🌲____🌲___🚗
+
+El juego se desarrolla por turnos de forma automática, y cada segundo se realiza una acción sobre los coches (moviéndose a la vez), hasta que
+uno de ellos (o los dos a la vez) llega a la meta.
+- Acciones:
+- - Avanzar entre 1 a 3 posiciones hacia la meta.
+- - Si al avanzar, el coche finaliza en la posición de un árbol, se muestra 💥 y no avanza durante un turno.
+- - Cada turno se imprimen las pistas y sus elementos.
+- Cuando la carrera finalice, se muestra el coche ganador o el empate.
+
+## Challenge 100 - La palabra de 100 puntos
+La última semana de 2021 comenzamos la actividad de retos de programación, con la intención de resolver un ejercicio cada semana para mejorar nuestra lógica... ¡Hemos llegado al EJERCICIO 100! Gracias 🙌
+
+Crea un programa que calcule los puntos de una palabra.
+- Cada letra tiene un valor asignado. Por ejemplo, en el abecedario español de 27 letras, la A vale 1 y la Z 27.
+- El programa muestra el valor de los puntos de cada palabra introducida.
+- El programa finaliza si logras introducir una palabra de 100 puntos.
+- Puedes usar la terminal para interactuar con el usuario y solicitarle cada palabra.
+
+## Challenge 101 - El ranking
+Todo llega a su fin... Este es el último reto de programación semanal de 2023.
+
+Crea un programa que muestre un listado calculado en tiempo real con todos los usuarios que han resuelto algún reto de programación de este año.
+- El listado debe estar ordenado por el número de ejercicios resueltos por cada usuario (y mostrar ese contador al lado de su nombre).
+- También se debe de mostrar el número de usuarios que han participado y el número de correcciones enviadas.
+
